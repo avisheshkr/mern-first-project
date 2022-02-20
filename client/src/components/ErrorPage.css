@@ -1,0 +1,32 @@
+.error {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+}
+
+.error::before {
+  content: "404";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50rem;
+  color: rgb(216, 216, 216);
+  z-index: -1;
+}
+
+.error__heading,
+.error__para {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.error button {
+  text-transform: uppercase;
+}

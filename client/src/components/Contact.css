@@ -1,0 +1,123 @@
+.upper-container {
+  display: flex;
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+.info {
+  box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem 2rem 3rem;
+  width: 38rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info span {
+  font-size: 3rem;
+}
+
+.text p:first-child {
+  font-weight: bold;
+}
+
+.text p:last-child {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.marg {
+  height: 60rem !important;
+  margin-bottom: 5rem;
+}
+
+.extra-container {
+  max-width: 100rem !important;
+}
+
+.field-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.comment {
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+}
+
+textarea::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 1440px) {
+  .upper-container {
+    padding: 0 5rem;
+  }
+
+  .info {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .upper-container {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .field-container .field input {
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .extra-container {
+    padding: 5rem !important;
+  }
+
+  .field-container .field input {
+    width: 15rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .upper-container {
+    margin-bottom: 5rem;
+  }
+
+  .extra-container {
+    padding: 5rem 8rem !important;
+  }
+
+  .field-container {
+    flex-direction: column;
+  }
+
+  .field-container .field input {
+    width: 25rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .extra-container {
+    padding: 5rem 4rem !important;
+  }
+
+  .field-container .field input {
+    width: 15rem !important;
+  }
+}
